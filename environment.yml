@@ -76,6 +76,9 @@ dependencies:
 
   # for MCELLBI201B (FA24) https://github.com/berkeley-dsep-infra/datahub/issues/5988
   - macs2==2.2.9.1
+
+  # DH-654, Make git-credentials-helper work for ds4bio course
+  - pyjwt==2.10.1
   
   # For https://github.com/berkeley-dsep-infra/datahub/issues/1846
   # Conda does not have these
