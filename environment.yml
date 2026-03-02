@@ -57,7 +57,6 @@ dependencies:
 
   # Packages for MCB280A, Spring 2022
   - bedtools==2.31.1
-  - datascience==0.17.6
 
   # Packages from bioconda for BIO1B
   - dendropy==4.4.0
@@ -77,6 +76,9 @@ dependencies:
 
   # for MCELLBI201B (FA24) https://github.com/berkeley-dsep-infra/datahub/issues/5988
   - macs2==2.2.9.1
+
+  # DH-654, Make git-credentials-helper work for ds4bio course
+  - pyjwt==2.10.1
   
   # For https://github.com/berkeley-dsep-infra/datahub/issues/1846
   # Conda does not have these
@@ -87,9 +89,14 @@ dependencies:
     - pybedtools==0.12.0
   # Packages for MCB-160L iss #3942
     # DH-418 requires pandas 1.5.3, conflicts with otter-grader which needs 2.2.2
-    # - allensdk==2.16.2
+    # For https://github.com/berkeley-dsep-infra/datahub/issues/7575
+    - allensdk==2.16.2
   # required for basic functionality
     - git-credential-helpers==0.2
     - nbconvert[webpdf]==7.16.6
     - nb2pdf==0.6.2
     - nbpdfexport==0.2.1
+  # DH - 557 
+    - datascience==0.18.0
+
+    
